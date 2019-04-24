@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dataset Explorer</title>
+    </head>
+    <body>
+        <h1>Dataset Explorer</h1>
+        <p>
+            <div id="directory_box">
+            Enter a {{'new' if directory}} full directory path{{' to start over' if directory}}:
+                <form action="/" method="post">
+                        <input type="text" name="directory" spellcheck="false" size="100" {{'autofocus' if not directory_list}}>
+                        <input type="submit" name="command" value="Submit Directory">
+                        <input type="submit" name="command" value="Reset Page">
+                </form>
+            </div>
+        </p>
+        {% if directory %}
+        <br />
+        <p>
+            <b>Current Directory</b>: {{directory}}
+        </p>
+        {% elif directory and not directory_list %}
+        <br />
+        <p>
+            <b>Warning</b>: No SAS datasets found.
+        </p>
+        {% endif %}
+        {% if error %}
+        <p>
+            <b>Error</b>: {{error}}
+        </p>
+        {% endif %}
+        {% if directory_list %}
+        <div id="file_select" style="float:left;">
+                <p>
+                    <b>Select a dataset file</b>:
+                </p>
+                <form action="/" method="post">
+                    <p>
+                        <select name="dataset" size="25" required {{'autofocus' if directory_list}}>
+                            {% for file in directory_list %}
+                                <option value="{{file}}" {{'selected' if file == dataset}}>{{file}}</option>
+                            {% endfor %}
+                        </select>
+                    </p>
+                    <p>
+                        <b>Select a command</b>:&nbsp;
+                        <input type="submit" name="command" value="run PROC CONTENTS">
+                        <input type="submit" name="command" value="run PROC MEANS">
+                        <input type="submit" name="command" value="run PROC FREQ">
+                    </p>
+                </form>
+        </div>
+        {% endif %}
+        {% if iframe_filename %}
+        <div id="return_value" style="float:left;margin-top:12px;margin-left:30px;">
+        <br />
+                <iframe src="{{ url_for('static', filename=iframe_filename) }}" style="border:2px solid darkblue;height:480px;width:640px;">
+                </iframe>
+        </div>
+        {% endif %}
+    </body>
+</html>
