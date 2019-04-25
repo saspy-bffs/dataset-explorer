@@ -1,4 +1,4 @@
-# Setup steps for Windows 10 with SAS 9.4 locally installed:
+# Setup steps for Windows 10 with Java SE and SAS 9.4 locally installed:
 #
 # (1) Make a copy of this file called "sascfg_personal.py" in the same directory as this project.
 #

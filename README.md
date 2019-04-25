@@ -18,7 +18,7 @@ All development was done under Windows 10 with Python 3.7 and SAS 9.4 locally in
 
 This application assumes a reasonably current version of Python 3 is installed, along with the modules specified in [requirements.txt](requirements.txt).
 
-This application also requires access to an installation of SAS 9.4 ([https://www.sas.com/en_us/software/sas9.html](https://www.sas.com/en_us/software/sas9.html)).
+This application also requires access to installations of Java SE ([https://www.oracle.com/technetwork/java/javase/](https://www.oracle.com/technetwork/java/javase/)) and SAS 9.4 ([https://www.sas.com/en_us/software/sas9.html](https://www.sas.com/en_us/software/sas9.html)).
 
 ## License
 This project is licensed under the MIT License; see the [LICENSE](LICENSE) file for details.
