@@ -1,4 +1,4 @@
-[![Python 3.7](https://img.shields.io/badge/python-3.7-brightgreen.svg)](#prerequisites)  [![license](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-brightgreen.svg)](#prerequisites)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # Dataset Explorer
 This project provides a proof of concept for using the Python package [SASPy](https://sassoftware.github.io/saspy/) to incorporate SAS output into a Python-based web application.
