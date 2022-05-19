@@ -1,2 +1,2 @@
-flask
-saspy
+Flask==2.1.2
+saspy==4.3.0
