@@ -15,7 +15,7 @@ A [Google Colab Notebook](https://colab.research.google.com/drive/1F0iyLLoUyWfPD
 
 This application assumes a reasonably current version of Python 3 is installed, along with the modules specified in [requirements.txt](requirements.txt).
 
-This application also requires access to installations of Java SE ([https://www.oracle.com/technetwork/java/javase/](https://www.oracle.com/technetwork/java/javase/)) and SAS 9.4 ([https://www.sas.com/en_us/software/sas9.html]
+This application also requires access to installations of Java SE ([https://www.oracle.com/technetwork/java/javase/](https://www.oracle.com/technetwork/java/javase/)) and SAS 9.4 ([https://support.sas.com/software/94/](https://support.sas.com/software/94/))
 
 ## Getting Started (Quick)
 
@@ -62,7 +62,7 @@ This application also requires access to installations of Java SE ([https://www.
 
 3. Visit the URL http://127.0.0.1:8000/ in a web browser, and follow the instructions.
 
-Note: If SAS was installed with default options, try the directory `C:\Program Files\SASHome\SASFoundation\9.4\core\sashelp`(https://www.sas.com/en_us/software/sas9.html)).
+Note: If SAS was installed with default options, try the directory `C:\Program Files\SASHome\SASFoundation\9.4\core\sashelp`.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
