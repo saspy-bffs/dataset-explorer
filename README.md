@@ -11,6 +11,12 @@ All development was done under Windows 10 with SAS 9.4, Java SE version 8 update
 
 A [Google Colab Notebook](https://colab.research.google.com/drive/1F0iyLLoUyWfPDUjgC0y1j4cowDotRAPy#offline=true&sandboxMode=true) is available if you'd like to try a version of this application without downloading the repo or configuring a connection to a local SAS installation.
 
+## Prerequisites
+
+This application assumes a reasonably current version of Python 3 is installed, along with the modules specified in [requirements.txt](requirements.txt).
+
+This application also requires access to installations of Java SE ([https://www.oracle.com/technetwork/java/javase/](https://www.oracle.com/technetwork/java/javase/)) and SAS 9.4 ([https://www.sas.com/en_us/software/sas9.html]
+
 ## Getting Started (Quick)
 
 1. Download this code repository.
@@ -32,11 +38,11 @@ A [Google Colab Notebook](https://colab.research.google.com/drive/1F0iyLLoUyWfPD
 
 ### Setup project in PyCharm
 
-1. Clone this repo in PyCharm
+1. Clone this repo in PyCharm:
 
     * If PyCharm is running with no projects open, create a new project by selecting _Get from VCS_ and entering this repo's URL (https://github.com/saspy-bffs/dataset-explorer)
 
-    * Otherwise, if a project is already open, use the **Git** Menu: Git -> Clone -> https://github.com/saspy-bffs/dataset-explorer
+    * Otherwise, if a project is already open, use the **Git Menu**: Git -> Clone -> https://github.com/saspy-bffs/dataset-explorer
  
 2. When prompted, create a new virtual environment, and make sure the file `requirements.txt` from the cloned repo is selected under _Dependencies_.
 
@@ -44,7 +50,7 @@ A [Google Colab Notebook](https://colab.research.google.com/drive/1F0iyLLoUyWfPD
 
 4. Copy the contents of `sascfg_personal-example.py` to the system clipboard.
 
-5. Create a new Python file named `sascfg_personal.py` in the project directory using the **File** menu : File -> New -> Python File
+5. Create a new Python file named `sascfg_personal.py` in the project directory using the **File Menu** : File -> New -> Python File
 
 6. Update line 14 of `sascfg_personal.py`, per the instructions in the file.
 
@@ -52,17 +58,11 @@ A [Google Colab Notebook](https://colab.research.google.com/drive/1F0iyLLoUyWfPD
 
 1. Use the project-navigation area in the left-hand panel to open the file `app.py` (e.g., by double-clicking its name).
 
-2. Use the **Run** menu to run the application: Run -> Run... -> app
+2. Launch the application using the **Run Menu**: Run -> Run... -> app
 
 3. Visit the URL http://127.0.0.1:8000/ in a web browser, and follow the instructions.
 
-Note: If SAS was installed with default options, try the directory `C:\Program Files\SASHome\SASFoundation\9.4\core\sashelp`
-
-## Prerequisites
-
-This application assumes a reasonably current version of Python 3 is installed, along with the modules specified in [requirements.txt](requirements.txt).
-
-This application also requires access to installations of Java SE ([https://www.oracle.com/technetwork/java/javase/](https://www.oracle.com/technetwork/java/javase/)) and SAS 9.4 ([https://www.sas.com/en_us/software/sas9.html](https://www.sas.com/en_us/software/sas9.html)).
+Note: If SAS was installed with default options, try the directory `C:\Program Files\SASHome\SASFoundation\9.4\core\sashelp`(https://www.sas.com/en_us/software/sas9.html)).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
